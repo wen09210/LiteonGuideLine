@@ -1,0 +1,59 @@
+
+// mediaQuery大小
+$largePc :1400px;
+$pc:1200px;
+$pad-media:1023px;
+$phone-media-up:768px;
+$phone-media:767.9px;
+$mini-phone-media:480px;
+
+// largePc
+@mixin largePc-width() {
+	@media all and (min-width: $largePc) {
+		@content;
+	}
+}
+//平板以上
+
+@mixin pad-width-up() {
+	@media all and (min-width: $pad-media) {
+		@content;
+	}
+}
+//手機以上
+
+@mixin phone-width-up() {
+	@media all and (min-width: $phone-media-up) {
+		@content;
+	}
+}
+
+// pc
+@mixin pc-width() {
+	@media all and (max-width: $pc) {
+		@content;
+	}
+}
+
+//平板
+
+@mixin pad-width() {
+	@media all and (max-width: $pad-media) {
+		@content;
+	}
+}
+
+//手機
+@mixin phone-width() {
+	@media all and (max-width: $phone-media) {
+		@content;
+	}
+}
+
+// 480以下
+//手機
+@mixin mini-phone-width() {
+	@media all and (max-width: $mini-phone-media) {
+		@content;
+	}
+}

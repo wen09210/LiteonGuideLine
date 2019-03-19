@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="content-language" content="”zh-Hant-TW”">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta name="Description" content="liteon">
+	<link rel="icon" href="">
+	<title>Liteon GuideLine</title>
+
+	<link rel="stylesheet" href="css/guideLine.css">
+</head>
+
+<body>
+	<div id="app">
+		<div class="reporting">
+
+			<div class="mainHeader">
+				<div class="row">
+					<div class="col-md-9">
+						<div class="reportTitle">
+							Reporting Portal
+						</div>
+					</div>
+					<div class="col-md-3 userLogInfo">
+						<img src="img/Branding_logo.png" alt="">
+						<!-- <div class="welcomeMsg">
+						<i class="fas fa-user"></i>
+						歡迎，陳松湳(Thai Chen)
+						<button class="logOut">登出</button>
+					</div> -->
+					</div>
+				</div>
+			</div>
+			<div class="mainContent">
+				<div class="row">
+
+					<div class="col-md-3 sidebar">
+						<button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#sibarCollapse" style="padding:0px">
+							<i class="fas fa-bars"></i>
+						</button>
+						<div id="sibarCollapse">
+							<div v-for="item in sidebar">
+								<div v-scroll-to="'#'+item.href" style="cursor:pointer;" class="sidebarItem">{{item.name}}</div>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-md-8 ">
+						<section id="usage">
+
+							<h1 class="guideLineTitle"># liteon GuideLine</h2>
+								<div>USAGE:在開始之前請先引入以下語法</div>
+								<div class="guideContent">
+									引用語法(引用時請注意路徑)
+									<h2 id="css">css</h2>
+									<blockquote>
+										<code>
+											<pre>&ltlink rel="stylesheet" href="<span class="preClassName">css/guideLine.css</span>"&gt
+</pre></code>
+										<!-- <button onclick="copy()">copy</button> -->
+
+									</blockquote>
+									<h2 id="js">js</h2>
+									<blockquote>
+										<code>
+											<pre>&ltscript src="<span class="preClassName">js/tether.min.js</span>"&gt&lt/script&gt
+&ltscript src="<span class="preClassName">js/jquery.min.js</span>"&gt&lt/script&gt
+&ltscript src="<span class="preClassName">js/bootstrap.min.js</span>"&gt&lt/script&gt
+&ltscript src="<span class="preClassName">js/main.js</span>" &gt&lt/script&gt</pre> </code>
+										<!-- <button onclick="copy()">copy</button> -->
+
+									</blockquote>
+
+
+
+								</div>
+
+
+						</section>
+						<section id="font">
+							<h2 class="guideLineTitle">文字</h2>
+							<table class="fontTable">
+								<div>目前文字使用"微軟正黑體"請依照需求使用H1~H6，使用class有一樣的效果，如.h1.h2.h3.h4.h5.h6</div>
+								<thead>
+									<tr>
+										<th>Heading</th>
+										<th>Example</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>
+											<p><code class="highlighter-rouge">&lt;h1&gt;&lt;/h1&gt;</code></p>
+
+										</td>
+										<td><span class="h1">font-size:40px</span></td>
+									</tr>
+									<tr>
+										<td>
+											<p><code class="highlighter-rouge">&lt;h2&gt;&lt;/h2&gt;</code></p>
+
+										</td>
+										<td><span class="h2">font-size:32px</span></td>
+									</tr>
+									<tr>
+										<td>
+											<p><code class="highlighter-rouge">&lt;h3&gt;&lt;/h3&gt;</code></p>
+
+										</td>
+										<td><span class="h3">font-size:28px</span></td>
+									</tr>
+									<tr>
+										<td>
+											<p><code class="highlighter-rouge">&lt;h4&gt;&lt;/h4&gt;</code></p>
+
+										</td>
+										<td><span class="h4">font-size:24px</span></td>
+									</tr>
+									<tr>
+										<td>
+											<p><code class="highlighter-rouge">&lt;h5&gt;&lt;/h5&gt;</code></p>
+
+										</td>
+										<td><span class="h5">font-size:20px</span></td>
+									</tr>
+									<tr>
+										<td>
+											<p><code class="highlighter-rouge">&lt;h6&gt;&lt;/h6&gt;</code></p>
+
+										</td>
+										<td><span class="h6">font-size:16px</span></td>
+									</tr>
+								</tbody>
+							</table>
+						</section>
+						<section id="mainColor">
+							<h2 class="guideLineTitle">顏色</h2>
+							<div class="row">
+
+								<div class="col-md-4">
+									藍色
+									<div style="background-color:#3355a1;color:white"> #3355a1 </div>
+									<div style="background-color:#095aa6;color:white"> #095aa6 </div>
+
+									<div style="background-color:#3377b7;color:white"> #3377b7 </div>
+								</div>
+								<div class="col-md-4">
+									灰色
+
+									<div style="background-color:#898989;color:black"> #898989 </div>
+									<div style="background-color:#dedede;color:black"> #dedede</div>
+									<div style="background-color:#e8e8e8;color:black"> #e8e8e8 </div>
+									<div style="background-color:#f0f0f0;color:black"> #f0f0f0</div>
+								</div>
+								<div class="col-md-4">
+									紅色
+									<div style="background-color:#d80e5b;color:black"> #d80e5b</div>
+								</div>
+							</div>
+						</section>
+						<section id="mainBtn">
+							<h2 class="guideLineTitle">按鈕</h2>
+							<p><code>&lt;button class="whiteBtn"&gt;&lt;/button&gt;</code></p>
+							<button class="whiteBtn"> office365</button>
+							<p>基本按鈕</p>
+
+							<p><code>&lt;button class="whiteBtn"&gt;&lt;i class="fab fa-windows"&gt;&lt;/i&gt;&lt;/button&gt;</code></p>
+							<button class="whiteBtn"><i class="fab fa-windows"></i> office365</button>
+							<p>按鈕包含icon</p>
+							<p>確定、取消按鈕</p>
+							<button class="whiteBtn alertBtnOk btnYes">確定</button>
+							<button class="whiteBtn alertBtnCancel btnNo">取消</button>
+							<p>
+								<code>
+									<pre>
+&lt;button <span class="preClassName">class="whiteBtn alertBtnOk btnYes"</span>&gt;確定&lt;/button&gt;
+&lt;button<span class="preClassName"> class="whiteBtn alertBtnCancel btnNo"</span> &gt;取消&lt;/button&gt;</pre>
+								</code>
+							</p>
+						</section>
+						<section id="mainIcon">
+							<h2 class="guideLineTitle">Icon</h2>
+							<div>使用時請記得將webfont資料夾放入根目錄中(目前先放有使用的)</div>
+							<p><code>&lt;i class="fab fa-windows"&gt;&lt;/i&gt;</code></p>
+							<p>用法，替換其中的className，即可更改Icon</p>
+							<div class="iconSection">
+								<div class="row">
+									<div class="iconDes col-md-6" v-for="item in icon">
+										<i :class="item.icon"></i>
+										<span>{{item.name}}</span>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section id="mainFrame">
+							<h2 class="guideLineTitle">基本框架</h2>
+							<p>基本框架包含Header、Footer與content</p>
+							<br>
+
+							<div class="row">
+								<div class="col-md-4">
+									<p class="componentTitle">Layout2</p>
+									<pre><img src="img/basicTheme.jpg" alt="" class="img-responsive" ></pre>
+
+									<div class="demoDes">
+										<a href="basic.html" target="_blank" class="demo">Demo</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										<a href="download/Layout2.rar" download="download/Layout2.rar" class="demo"><i class="fas fa-download"></i>download</a>
+									</div>
+
+								</div>
+								<div class="col-md-4">
+									<p class="componentTitle">Login Page</p>
+									<pre><img src="img/loginPage.jpg" alt="" class="img-responsive" ></pre>
+
+									<div class="demoDes">
+										<a href="loginPage.html" target="_blank" class="demo">Demo</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+										<a href="download/loginPage.rar" download="download/loginPage.rar" class="demo"><i class="fas fa-download"></i>download</a>
+									</div>
+
+								</div>
+
+							</div>
+
+						</section>
+						<section id="mainComponents">
+							<h2 class="guideLineTitle">基礎元件</h2>
+							<p class="componentTitle">摺疊選單</p>
+							<ul class="reportPaperList">
+								<li>Manager Self-Services Reports
+									<ul>
+										<li>
+											HR Workflow Report</li>
+										<li>Travel Expense Control Reports</li>
+									</ul>
+								</li>
+								<li>sdsdsadsadsdsd
+									<ul>
+										<li>HR Workflow Report</li>
+										<li>Travel Expense Control Reports
+											<ul>
+												<li>HR Workflow Report</li>
+												<li>Travel Expense Control Reports
+													<ul>
+														<li>HR Workflow Report</li>
+														<li>Travel Expense Control Reports
+														</li>
+													</ul>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+
+
+							</ul>
+							<code>
+								<pre class="preBlack">
+&lt;ul class="reportPaperList"&gt;
+	&lt;li&gt;Manager Self-Services Reports
+		&lt;ul&gt;
+			&lt;li&gt;
+				HR Workflow Report&lt;/li&gt;
+			&lt;li&gt;Travel Expense Control Reports&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/li&gt;
+	&lt;li&gt;sdsdsadsadsdsd
+		&lt;ul&gt;
+			&lt;li&gt;HR Workflow Report&lt;/li&gt;
+			&lt;li&gt;Travel Expense Control Reports
+				&lt;ul&gt;
+					&lt;li&gt;HR Workflow Report&lt;/li&gt;
+					&lt;li&gt;Travel Expense Control Reports
+						&lt;ul&gt;
+							&lt;li&gt;HR Workflow Report&lt;/li&gt;
+							&lt;li&gt;Travel Expense Control Reports
+							&lt;/li&gt;
+						&lt;/ul&gt;
+					&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/li&gt;
+&lt;/ul&gt;
+							</pre>
+							</code>
+							若在折疊視窗上要顯示彈跳視窗請加上這段
+							<code>$('.theLast').on('click', function () { $('#reportModal').modal('show') })</code>
+						</section>
+						<section id="mainModal">
+							<h2 class="guideLineTitle">彈出視窗</h2>
+							<!-- The report Modal -->
+							<div class="modal fade" id="reportModal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+
+										<!-- Modal Header -->
+										<div class="modal-header">
+											<h4 class="modal-title">Modal Heading</h4>
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+										</div>
+
+										<!-- Modal body -->
+										<div class="modal-body">
+											<ul class="openModalList">
+												<li>報表1 </li>
+												<li>報表2</li>
+												<li>報表3 </li>
+
+											</ul>
+										</div>
+
+										<!-- Modal footer -->
+										<div class="modal-footer">
+											<button type="button" class="btn btn-danger" data-dismiss="modal"></button>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<!-- The announcement Modal -->
+							<div class="modal fade" id="announceModal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+
+										<!-- Modal Header -->
+										<div class="modal-header">
+											<h4 class="modal-title">Modal Heading</h4>
+											<button type="button" class="close" data-dismiss="modal">&times;</button>
+										</div>
+
+										<!-- Modal body -->
+										<div class="modal-body">
+											<div class="announcementHere">
+												Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+												industry's
+												standard
+												dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+												type
+												specimen
+												book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining
+												essentially
+												unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
+												passages,
+												and
+												more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+											</div>
+										</div>
+
+										<!-- Modal footer -->
+										<div class="modal-footer">
+											<a href="other/GUI style design of WorkFlow_1017.pptx" download="newfileName">下載檔案</a>
+										</div>
+
+									</div>
+								</div>
+							</div>
+							<p class="componentTitle">報表彈出視窗</p>
+							<div class="demo" data-toggle="modal" data-target="#reportModal">Demo</div>
+							<p>在HTMltag 上新增屬性 <span class="preClassName">data-toggle="modal" data-target="#reportModal"</span>來指定元件</p>
+							<p>例如:</p>
+							<code>
+								<pre>
+&lt;button class="whiteBtn" <span class="preClassName">data-toggle="modal" data-target="#reportModal"</span>&gt;報表彈出視窗&lt;/button&gt;
+		</pre>
+							</code>
+							<p>內容:<span class="preClassName"> id </span>需與<span class="preClassName">data-target</span> 相符</p>
+							<code>
+								<pre class="preBlack">
+&lt;div class="modal fade" id="reportModal"&gt;
+	&lt;div class="modal-dialog"&gt;
+		&lt;div class="modal-content"&gt;
+			&lt;!-- Modal Header --&gt;
+			&lt;div class="modal-header"&gt;
+				&lt;h4 class="modal-title"&gt;Modal Heading&lt;/h4&gt;
+				&lt;button type="button" class="close" data-dismiss="modal"&gt;&times;&lt;/button&gt;
+			&lt;/div&gt;
+			&lt;!-- Modal body --&gt;
+			&lt;div class="modal-body"&gt;
+				&lt;ul class="openModalList"&gt;
+					&lt;li&gt;報表1 &lt;/li&gt;
+					&lt;li&gt;報表2&lt;/li&gt;
+					&lt;li&gt;報表3 &lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/div&gt;
+			&lt;!-- Modal footer --&gt;
+			&lt;div class="modal-footer"&gt;
+				&lt;button type="button" class="btn btn-danger" data-dismiss="modal"&gt;&lt;/button&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+		</pre>
+							</code>
+							<p class="componentTitle">下載檔案彈出視窗</p>
+							<div class="demo" data-toggle="modal" data-target="#announceModal">Demo</div>
+							<p>HTML tag 屬性<span class="preClassName">data-toggle="modal" data-target="#announceModal"</span></p>
+							<code>
+								<pre>
+&lt;button class="whiteBtn" <span class="preClassName">data-toggle="modal" data-target="#announceModal"</span>&gt;下載檔案彈出視窗&lt;/button&gt;
+		</pre>
+							</code>
+							<p>內容</p>
+							<code>
+								<pre class="preBlack">
+&lt;div class="modal fade" id="announceModal"&gt;
+	&lt;div class="modal-dialog"&gt;
+		&lt;div class="modal-content"&gt;
+			&lt;!-- Modal Header --&gt;
+			&lt;div class="modal-header"&gt;
+				&lt;h4 class="modal-title"&gt;Modal Heading&lt;/h4&gt;
+				&lt;button type="button" class="close" data-dismiss="modal"&gt;&times;&lt;/button&gt;
+			&lt;/div&gt;
+			&lt;!-- Modal body --&gt;
+			&lt;div class="modal-body"&gt;
+				&lt;div class="announcementHere"&gt;
+					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+					standard
+					dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+				&lt;/div&gt;
+			&lt;/div&gt;
+			&lt;!-- Modal footer --&gt;
+			&lt;div class="modal-footer"&gt;
+				&lt;a href="other/GUI style design of WorkFlow_1017.pptx" download="newfileName"&gt;下載檔案&lt;/a&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</pre>
+							</code>
+						</section>
+						<section id="mainAlert">
+							<h2 class="guideLineTitle">Alert</h2>
+							<div class="demo" onclick="alert('這個是範例')">Demo</div>
+							<p>Alert已改為預設樣式，一共有text、yesCallBack與noCallBack，依照需求取用</p>
+
+							<code>
+								function (text, yesCallback, noCallback) {}
+							</code>
+							<p>text:alert文字</p>
+							<p>yesCallBack: 按下確定後要觸發的function</p>
+							<p>noCallBack: 按下取消後要觸發的function</p>
+							<p>透過js觸發</p>
+							<code>
+								<pre>$('.alert').alert()</pre></code>
+							<br>
+
+						</section>
+						<section id="mainDrag">
+							<h2 class="guideLineTitle">拖拉元件</h2>
+							<p>要使用拖拉元件請先引入:</p>
+							<code>
+								<pre>&ltscript src="<span class="preClassName">js/jqueryUi.js</span>"&gt&lt/script&gt
+&ltscript src="<span class="preClassName">js/jqueryUiTouch.js</span>"&gt&lt/script&gt
+</pre> </code>
+							<p>拖拉元件</p>
+							<ul id="sortable" class="moveable">
+								<li>One </li>
+								<li>Two</li>
+								<li>Three</li>
+								<li>Four</li>
+							</ul>
+							<p>HTML</p>
+							<code>
+								<pre class="preBlack">
+&lt;ul id="sortable" class="moveable"&gt;
+	&lt;li&gt;One &lt;/li&gt;
+	&lt;li&gt;Two&lt;/li&gt;
+	&lt;li&gt;Three&lt;/li&gt;
+	&lt;li&gt;Four&lt;/li&gt;
+&lt;/ul&gt;	</pre>
+							</code>
+
+						</section>
+					</div>
+				</div>
+
+
+
+
+
+			</div>
+			<div class="mainFooter">
+				<!-- <div class="font-lg">相關連結</div>
+			<button class="whiteBtn"><i class="fab fa-windows"></i> office365</button>
+			<button class="whiteBtn"><i class="fab fa-windows"></i> office365</button>
+			<button class="whiteBtn"><i class="fab fa-windows"></i> office365</button>
+			<button class="whiteBtn"><i class="fab fa-windows"></i> office365</button>
+			<br>
+			<hr> -->
+				<div class="font-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget
+					imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat </div>
+
+			</div>
+		</div>
+
+	</div>
+	<script src="js/tether.min.js"></script>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jqueryUi.js"></script>
+	<script src="js/jqueryUiTouch.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!-- <script src="js/clipboard.min.js"></script> -->
+	<!-- vue -->
+	<script src="js/vue2.5.17.js"></script>
+	<script src="js/vue-scroll-to.js"></script>
+
+	<script>
+		var vm = new Vue({
+			el: '#app',
+			data: {
+				sidebar: [],
+				icon: []
+			},
+			created: function () {
+				this.fetchData()
+
+			},
+
+			methods: {
+				fetchData: function () {
+					var xhr = new XMLHttpRequest()
+					var self = this
+					xhr.open('GET', 'json/icon.json')
+					xhr.onload = function () {
+						self.icon = JSON.parse(xhr.responseText)
+						console.log(self.icon)
+					}
+					xhr.send()
+					// 第2支json
+					var xhr1 = new XMLHttpRequest()
+					xhr1.open('GET', 'json/sidebar.json')
+					xhr1.onload = function () {
+						self.sidebar = JSON.parse(xhr1.responseText)
+						console.log(self.sidebar)
+					}
+					xhr1.send()
+				}
+			}
+
+		})
+	</script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
