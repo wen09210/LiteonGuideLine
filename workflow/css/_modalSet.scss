@@ -6,7 +6,7 @@
 	border-top-left-radius: 3px;
 	font-size: 12px;
 	font-weight: 400;
-	padding: 8px 15px 10px;
+	padding: 6px 15px 6px;
 	margin: 1px;
 }
 
@@ -70,7 +70,6 @@
 	float: right;
 	display: inline-block;
 	padding-right: 10px;
-
 }
 
 .liFavorite:hover,
@@ -127,6 +126,8 @@
 
 				.mfsHeader {
 					padding: 12px 0px 0px;
+					font-weight: bold;
+					margin-bottom: 5px;
 				}
 
 				@include phone-width() {
@@ -207,4 +208,17 @@
 .tab-content {
 	min-height: 350px;
 	margin: 0px 50px;
+}
+// popover
+.popover{
+	box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.13);
+	border:1px solid transparent;
+	&:before{
+		border:1px solid transparent;
+		border-bottom-color:#fff;
+	}
+	&:after{
+		
+		border-bottom-color:#fff;
+	}
 }

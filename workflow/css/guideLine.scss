@@ -214,7 +214,10 @@
 	font-size: 14px;
 	font-weight: 600;
 	position: relative;
-	padding: 12px;
+	padding-left: 12px;
+	&.theLast{
+		padding: 0px 0px 12px ;
+	}
 }
 
 .reportPaperList>li {
@@ -249,7 +252,9 @@
 .reportPaperList li ul.openUl {
 	display: block;
 }
-
+li.theLast:first-child {
+	padding-top: 12px;
+}
 /* 當他是最後一個時 */
 .reportPaperList li.theLast {
 	font-size: 12px;
@@ -722,6 +727,9 @@ pre {
 	}
 
 	.noteContent {
+		h4{
+			padding-top:12px
+		}
 		height: 180px;
 		padding: 0px 10px;
 		overflow-y: auto;

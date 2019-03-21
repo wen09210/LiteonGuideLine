@@ -11357,7 +11357,7 @@ a .btn {
   border-top-left-radius: 3px;
   font-size: 12px;
   font-weight: 400;
-  padding: 8px 15px 10px;
+  padding: 6px 15px 6px;
   margin: 1px; }
 
 .modal-header button.close {
@@ -11452,7 +11452,9 @@ a .btn {
         background: #042B50;
         color: #5BF01A; }
       .modalFileSelection .modal-body ul.listBox li .mfsHeader {
-        padding: 12px 0px 0px; }
+        padding: 12px 0px 0px;
+        font-weight: bold;
+        margin-bottom: 5px; }
       @media all and (max-width: 767.9px) {
         .modalFileSelection .modal-body ul.listBox li {
           width: 30%;
@@ -11522,6 +11524,16 @@ a .btn {
 .tab-content {
   min-height: 350px;
   margin: 0px 50px; }
+
+.popover {
+  -webkit-box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.13);
+  box-shadow: 4px 4px 4px 0 rgba(0, 0, 0, 0.13);
+  border: 1px solid transparent; }
+  .popover:before {
+    border: 1px solid transparent;
+    border-bottom-color: #fff; }
+  .popover:after {
+    border-bottom-color: #fff; }
 
 .workflow .headerBtn {
   display: -webkit-box;
@@ -11956,7 +11968,9 @@ th[scope="row"] {
   font-size: 14px;
   font-weight: 600;
   position: relative;
-  padding: 12px; }
+  padding-left: 12px; }
+  .reportPaperList li.theLast {
+    padding: 0px 0px 12px; }
 
 .reportPaperList > li {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -11984,6 +11998,9 @@ th[scope="row"] {
 /* 打開狀態 */
 .reportPaperList li ul.openUl {
   display: block; }
+
+li.theLast:first-child {
+  padding-top: 12px; }
 
 /* 當他是最後一個時 */
 .reportPaperList li.theLast {
@@ -12362,6 +12379,8 @@ pre {
     height: 180px;
     padding: 0px 10px;
     overflow-y: auto; }
+    .note .noteContent h4 {
+      padding-top: 12px; }
 
 .noteGreen {
   left: calc(11% + 300px);
